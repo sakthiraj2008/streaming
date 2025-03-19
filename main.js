@@ -15,7 +15,7 @@ const episodes = [
     epItem.innerHTML = `
       <img src="${ep.thumbnail}" alt="${ep.title}">
       <h3>${ep.title}</h3>
-      <a href="">Watch Now</a>
+      <a href="episode.html?src=${encodeURIComponent(ep.src)}">Watch Now</a>
     `;
     episodeList.appendChild(epItem);
   });
