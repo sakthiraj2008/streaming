@@ -24,7 +24,7 @@ function displayAnime(list) {
       <p>Genre: ${anime.genre}</p>
       <p>⭐ ${anime.rating.toFixed(1)}/5</p>
       <a href="${anime.downloadLink}" class="download-btn" download="${anime.title.replace(/\s+/g, '_')}.mp4">
-        ⬇️ Download
+         Download
       </a>
     `;
     animeList.appendChild(animeItem);
