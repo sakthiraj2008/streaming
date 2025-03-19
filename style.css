@@ -1,67 +1,85 @@
 /* General Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #1e1e1e;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Header Styling */
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 20px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.controls input,
+.controls select,
+.controls button {
+  padding: 8px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Anime List */
+.anime-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Anime Item */
+.anime-item {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.anime-item:hover {
+  transform: translateY(-5px);
+}
+
+.anime-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Download Button */
+.download-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #ff4500;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #e03e00;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
   header {
-    background-color: #ff4500;
-    padding: 1rem;
-    text-align: center;
+    flex-direction: column;
   }
-  
-  h1 {
-    margin: 0;
-    font-size: 2rem;
+
+  .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
-  
-  /* Episode List Container */
-  .episode-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
-    padding: 1rem;
-  }
-  
-  /* Episode Item Styling */
-  .episode-item {
-    background-color: #333;
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-    transition: transform 0.2s ease;
-  }
-  
-  .episode-item:hover {
-    transform: scale(1.05);
-  }
-  
-  .episode-item img {
-    width: 100%;
-    border-radius: 8px;
-  }
-  
-  .episode-item h3 {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-  }
-  
-  /* "Watch Now" Button */
-  .episode-item a {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #ff4500;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.2s ease;
-  }
-  
-  .episode-item a:hover {
-    background-color: #e03e00;
-  }
-  
+}
