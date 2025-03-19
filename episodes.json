@@ -1,0 +1,28 @@
+{
+  "1": [
+    {
+      "episodeId": 1,
+      "title": "Episode 1",
+      "downloadLink": "https://example.com/naruto-ep1.mp4"
+    },
+    {
+      "episodeId": 2,
+      "title": "Episode 2",
+      "downloadLink": "https://example.com/naruto-ep2.mp4"
+    }
+  ],
+  "2": [
+    {
+      "episodeId": 1,
+      "title": "Episode 1",
+      "downloadLink": "https://example.com/aot-ep1.mp4"
+    }
+  ],
+  "3": [
+    {
+      "episodeId": 1,
+      "title": "Episode 1",
+      "downloadLink": "https://example.com/demon-ep1.mp4"
+    }
+  ]
+}
