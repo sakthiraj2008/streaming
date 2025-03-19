@@ -82,4 +82,19 @@ header {
     flex-direction: column;
     gap: 10px;
   }
+  
+  .back-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  background-color: #ccc;
+  color: #333;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.back-btn:hover {
+  background-color: #bbb;
+}
+
 }
