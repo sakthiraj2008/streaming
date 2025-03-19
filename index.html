@@ -3,21 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anime Streaming</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Anime Download Site</title>
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-  <!-- Header Section -->
   <header>
-    <h1>Anime Streaming</h1>
+    <h1>Anime Download Site</h1>
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search anime..." />
+      <select id="genreFilter">
+        <option value="">All Genres</option>
+        <option value="Action">Action</option>
+        <option value="Adventure">Adventure</option>
+        <option value="Fantasy">Fantasy</option>
+      </select>
+      <button id="darkModeToggle">🌙 Dark Mode</button>
+    </div>
   </header>
 
-  <!-- Episode List Section -->
-  <div class="episode-list" id="episodeList">
-    <!-- Episodes will be loaded dynamically from JS -->
-  </div>
+  <div class="anime-list" id="animeList"></div>
 
-  <!-- JavaScript -->
-  <script src="main.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 </html>
