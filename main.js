@@ -7,7 +7,7 @@ let animeData = [];
 
 // Fetch Anime Data from JSON
 async function loadAnimeData() {
-  const res = await fetch('data/anime.json');
+  const res = await fetch('anime.json');
   animeData = await res.json();
   displayAnime(animeData);
 }
