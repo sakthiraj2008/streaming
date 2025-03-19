@@ -1,0 +1,13 @@
+<div class="episode-list">
+  <div class="episode-item">
+    <img src="https://youtube.com" alt="Episode 1">
+    <h3>Episode 1</h3>
+    <a href="episode.html?src=assets/episodes/ep1.mp4">Download Now</a>
+  </div>
+
+  <div class="episode-item">
+    <img src="assets/thumbnails/ep2.jpg" alt="Episode 2">
+    <h3>Episode 2</h3>
+    <a href="episode.html?src=assets/episodes/ep2.mp4">Watch Now</a>
+  </div>
+</div>
