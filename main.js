@@ -21,8 +21,8 @@ function displayAnime(list) {
     animeItem.innerHTML = `
       <img src="${anime.thumbnail}" alt="${anime.title}">
       <h3>${anime.title}</h3>
-      <p>Genre: ${anime.genre}</p>
-      <p>⭐ ${anime.rating.toFixed(1)}/5</p>
+      <h1>Genre: ${anime.genre}</h1>
+      <h1>⭐ ${anime.rating.toFixed(1)}/5</h1>
       <a href="${anime.downloadLink}" class="download-btn" download="${anime.title.replace(/\s+/g, '_')}.mp4">
          Download
       </a>
