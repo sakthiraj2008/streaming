@@ -1,0 +1,67 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #ff4500;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  /* Episode List Container */
+  .episode-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  /* Episode Item Styling */
+  .episode-item {
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .episode-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .episode-item img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .episode-item h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  /* "Watch Now" Button */
+  .episode-item a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #ff4500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .episode-item a:hover {
+    background-color: #e03e00;
+  }
+  
